@@ -1,0 +1,73 @@
+/* Fondo con imagen */
+body {
+  font-family: Arial, sans-serif;
+  background: url("login.webp") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Tarjeta de login con transparencia */
+.container {
+  background: rgba(255, 255, 255, 0.30); /* blanco translúcido */
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  width: 350px;
+  text-shadow: 0 0 8px #0d47a1; /* halo azul */
+}
+
+/* Título */
+h2 {
+  color: #0d47a1; /* azul fuerte */
+  margin-bottom: 20px;
+  text-shadow: 0 0 8px #0d47a1; /* halo azul */
+}
+
+/* Inputs y selects */
+input, select {
+  padding: 10px;
+  margin: 8px 0;
+  width: 85%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+  text-shadow: 0 0 8px #0d47a1; /* halo azul */
+}
+
+input:focus, select:focus {
+  border-color: #0d47a1; /* azul al enfocar */
+  outline: none;
+}
+
+/* Botón centrado abajo */
+button {
+  background-color: #0d47a1; /* azul principal */
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 12px;
+  width: 85%;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 15px;
+  text-shadow: 0 0 8px #0d47a1; /* halo azul */
+}
+
+button:hover {
+  background-color: #000000; /* negro al pasar el mouse */
+  transform: scale(1.05);
+}
+
+/* Mensajes de error o resultado */
+#mensaje, #resultado {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0d47a1;
+}

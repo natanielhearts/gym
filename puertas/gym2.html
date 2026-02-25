@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Test de Bienestar</title>
+  <link rel="stylesheet" href="gyms.css">
+  <script src="rutinas.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Test de cómo te sientes hoy</h2>
+    <form id="testForm">
+      
+      <label>1. ¿Cómo te sientes hoy?</label>
+      <select id="q1">
+        <option>energético</option>
+        <option>cansado</option>
+        <option>normal</option>
+      </select>
+      <br><br>
+      
+      <label>2. ¿Cuánto tiempo tienes?</label>
+      <select id="q2">
+        <option>15 min</option>
+        <option>30 min</option>
+        <option>45 min</option>
+      </select>
+      <br><br>
+      
+      <label>3. ¿Qué prefieres trabajar?</label>
+      <select id="q3">
+        <option>fuerza</option>
+        <option>cardio</option>
+        <option>flexibilidad</option>
+      </select>
+      <br><br>
+      
+      <label>4. ¿Tienes equipo en casa?</label>
+      <select id="q4">
+        <option>sí</option>
+        <option>no</option>
+      </select>
+      <br><br>
+      
+      <label>5. Nivel de experiencia:</label>
+      <select id="q5">
+        <option>principiante</option>
+        <option>intermedio</option>
+        <option>avanzado</option>
+      </select>
+      <br><br>
+      
+      <button type="button" onclick="evaluarTest()">Enviar</button>
+    </form>
+  </div>
+</body>
+</html>
